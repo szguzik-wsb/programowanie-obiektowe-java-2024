@@ -12,14 +12,14 @@ public class Car extends Bayer implements CarInterface {
     }
 
     Car(String color) {
-        super("Antek", 1710);
+        super("Antek", 1710, "1.0");
         this.name = "Mercedes";
         this.color = color;
         this.year = 2018;
     }
 
     Car(String color, int year) {
-        super("Antek", year);
+        super("Antek", year,"3.0");
         this.name = "Mercedes";
         this.color = color;
         this.year = year;
@@ -32,7 +32,8 @@ public class Car extends Bayer implements CarInterface {
                 "Year: " + this.year + ", " +
                 "SurName: " + this.getSurName() + ", " +
                 "bName: " + this.bName  + ", " +
-                "bYear: " + this.bYear;
+                "bYear: " + this.bYear + ", " +
+                "silnik: " + this.getSilnik();
     }
 
     @Override

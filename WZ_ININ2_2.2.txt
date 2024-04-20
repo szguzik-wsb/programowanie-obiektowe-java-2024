@@ -1,0 +1,19 @@
+https://github.com/szguzik-wsb/WZ_ININ2_grupa_2
+
+Wymagania:
+Własny projekt 
+Praca grupowa (4,5 osób)
+OOP
+- metody
+- stale
+- zmienne
+- this
+- super
+- konstruktory 
+- interfejsy
+- klasy abstrakcyjne
+- wzorzec Singleton
+- podejście MVC
+- zasada DRY
+
+
