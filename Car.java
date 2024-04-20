@@ -1,12 +1,13 @@
-public class Car {
+public class Car extends BaseAbstract implements CarInterface {
     private String name;
     private String color;
     private int year;
 
     Car() {
         this.name = "Mercedes";
-        this.color = "red";
+        this.color = "Red";
         this.year = 2018;
+        this.setSurName("Kowalska");
     }
 
     Car(String color) {
@@ -21,9 +22,16 @@ public class Car {
         this.year = year;
     }
 
+    @Override
     public String InfoCar() {
-        return "Name: " + name + ", " +
-                "Color: " + color + ", " +
-                "Year: " + year;
+        return "Name: " + this.name + ", " +
+                "Color: " + this.color + ", " +
+                "Year: " + this.year + ", " +
+                "SurName: " + this.getSurName();
+    }
+
+    @Override
+    public String InfoPerson() {
+        return "";
     }
 }
