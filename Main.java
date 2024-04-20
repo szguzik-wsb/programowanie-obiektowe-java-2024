@@ -10,5 +10,13 @@ public class Main {
 
         Car car3 = new Car("Czarny", 2024);
         System.out.println(car3.InfoCar());
+
+//         Bardzo zła praktyka
+        Car car4 = car3;
+//         odkomentowanie spowoduje nadpisanie year w obiekcie car3
+//        car4.year = 1988;
+
+        System.out.println(car3.InfoCar());
+        System.out.println(car4.InfoCar());
     }
 }
